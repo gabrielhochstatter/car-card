@@ -13,16 +13,16 @@ export default class CardHeader extends React.Component {
   }
 
   render () {
-    const { make, fuelData, imgUrl } = this.props
+    const { make, fuelData, imgUrl, themeColorRGB } = this.props
     const { isFuelInfoVisible } = this.state
     const overlayOpacity = 0.9
 
     const overlayStyle = {
-      backgroundColor: `rgba(187, 10, 48, ${overlayOpacity})`
+      backgroundColor: `rgba(${themeColorRGB}, ${overlayOpacity})`
     }
 
     const overlayStyleZero = {
-      backgroundColor: `rgba(187, 10, 48, 0)`
+      backgroundColor: `rgba(${themeColorRGB}, 0)`
     }
 
     return (

@@ -10,7 +10,7 @@ export default class MainCard extends React.Component {
   }
 
   componentDidMount () {
-    axios.get('carData.json')
+    axios.get('carData2.json')
       .then(res => {
         this.setState({ carData: res.data })
       })
@@ -20,13 +20,17 @@ export default class MainCard extends React.Component {
 
   render () {
     const finishedLoading = this.state.finishedLoading
-    const { make, fuelData, imgUrl } = this.state.carData
+    const { make, fuelData, imgUrl, themeColorRGB } = this.state.carData
     return (
       <Fragment>
         <div className='main-card-wrapper'>
           {finishedLoading ? (
             <Fragment>
-              <CardHeader make={make} fuelData={fuelData} imgUrl={imgUrl} />
+              <CardHeader
+                make={make}
+                fuelData={fuelData}
+                imgUrl={imgUrl}
+                themeColorRGB={themeColorRGB} />
               <CardContent carData={this.state.carData} />
             </Fragment>
           ) : ('Loading...')}
