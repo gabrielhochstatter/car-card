@@ -13,7 +13,7 @@ export default class CardHeader extends React.Component {
   }
 
   render () {
-    const { make, fuelData } = this.props
+    const { make, fuelData, imgUrl } = this.props
     const { isFuelInfoVisible } = this.state
     const overlayOpacity = 0.9
 
@@ -32,7 +32,7 @@ export default class CardHeader extends React.Component {
           config={config.fast}
         >
           {props => (
-            <div className='top-wrapper'>
+            <div className='top-wrapper' style={{ backgroundImage: `url(${imgUrl})` }}>
               <div className='top-section' style={props}>
                 <Fragment>
                   <div className='extra-info-content'>
