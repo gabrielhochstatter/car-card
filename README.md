@@ -4,7 +4,7 @@ This is an animated React component for a fictional 'connected car' app similar 
 
 ## Demo:
 
-[El Giferino](https://i.imgur.com/q2vX9vV.gif)
+![El Giferino](https://i.imgur.com/q2vX9vV.gif)
 
 ## Basic Usage
 
