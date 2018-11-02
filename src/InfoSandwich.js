@@ -1,17 +1,15 @@
-import React, { Fragment } from "react";
-import { Spring, config } from "react-spring";
+import React from 'react'
+import { Spring } from 'react-spring'
 
-// import "./styles.css";
-
-const FancyButton = ({ delay, label, unit, value }) => {
+const InfoSandwich = ({ delay, label, unit, value }) => {
   const normalStyle = {
-    transform: "scale(1)",
+    transform: 'scale(1)',
     opacity: 1
-  };
+  }
   const initialStyle = {
-    transform: "scale(0)",
+    transform: 'scale(0)',
     opacity: 0
-  };
+  }
   return (
     <Spring
       to={normalStyle}
@@ -20,9 +18,9 @@ const FancyButton = ({ delay, label, unit, value }) => {
       delay={delay}
     >
       {props => (
-        <div style={props} className="info-sandwich">
-          <div className="info-content">
-            <div className="info-label">{label}</div>
+        <div style={props} className='info-sandwich'>
+          <div className='info-content'>
+            <div className='info-label'>{label}</div>
             <div>
               <Spring
                 from={{ number: 0 }}
@@ -30,17 +28,17 @@ const FancyButton = ({ delay, label, unit, value }) => {
                 config={{ duration: 370 }}
               >
                 {props => (
-                  <span className="info-value">{Math.floor(props.number)}</span>
+                  <span className='info-value'>{Math.floor(props.number)}</span>
                 )}
               </Spring>
 
-              <span className="info-unit">{unit}</span>
+              <span className='info-unit'>{unit}</span>
             </div>
           </div>
         </div>
       )}
     </Spring>
-  );
-};
+  )
+}
 
-export default FancyButton;
+export default InfoSandwich

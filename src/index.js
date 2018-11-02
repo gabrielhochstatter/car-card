@@ -1,16 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import MainCard from "./MainCard";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MainCard from './MainCard'
 
-import "./styles.scss";
+import './styles.scss'
 
-function App() {
+function App () {
   return (
-    <div className="App">
+    <div className='App'>
       <MainCard />
     </div>
-  );
+  )
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement)

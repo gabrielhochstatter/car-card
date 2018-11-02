@@ -35,7 +35,6 @@ $audi-red: rgba(187, 10, 48, 0.9);
 
 .navbar {
   display: flex;
-  // flex: 2;
   justify-content: space-between;
   align-items: flex-end;
   padding: 0.7em 0.7em 0.7em 0.7em;
@@ -111,19 +110,12 @@ $audi-red: rgba(187, 10, 48, 0.9);
 .info-unit {
   font-size: 0.8em;
   font-weight: 300;
-  // padding-left:0.5em;
 }
 
 .info-value {
   font-size: 1.8em;
   font-weight: 500;
 }
-
-// .content-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   align-content: flex-start;
-// }
 
 .content-section {
   height: 65%;
@@ -136,7 +128,6 @@ $audi-red: rgba(187, 10, 48, 0.9);
     justify-content: space-between;
     align-items: baseline;
     padding-top: 0.3em;
-    // padding-bottom: 0.3em;
     border-bottom: 1px solid black;
 }
 
