@@ -1,21 +1,21 @@
-import React, { Fragment } from 'react';
-import { Spring, config } from 'react-spring';
-import InfoSandwich from './InfoSandwich';
-import { MdClose, MdLocalGasStation } from 'react-icons/md';
+import React, { Fragment } from 'react'
+import { Spring, config } from 'react-spring'
+import InfoSandwich from './InfoSandwich'
+import { MdClose, MdLocalGasStation } from 'react-icons/md'
 
 export default class CardHeader extends React.Component {
   state = {
-    isFuelInfoVisible: false,
-    overlayOpacity: 0.9
+    isFuelInfoVisible: false
   }
 
   toggleMoreInfo = () => {
     this.setState({ isFuelInfoVisible: !this.state.isFuelInfoVisible })
   }
 
-  render() {
+  render () {
     const { make, fuelData } = this.props
-    const { isFuelInfoVisible, overlayOpacity } = this.state
+    const { isFuelInfoVisible } = this.state
+    const overlayOpacity = 0.9
 
     const overlayStyle = {
       backgroundColor: `rgba(187, 10, 48, ${overlayOpacity})`

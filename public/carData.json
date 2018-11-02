@@ -1,7 +1,8 @@
 {
     "carId": "12345",
     "make": "Audi",
-    "model": "A6 Saloon",
+    "model": "A6",
+    "modelBodyStyle": "Saloon",
     "modelVariant": "50 TDI quattro",
     "generalData": [
         {

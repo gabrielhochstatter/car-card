@@ -7,9 +7,10 @@ const CardContent = ({ carData }) => {
       key={line.title}
       title={line.title}
       value={line.value}
-      delay={200 + 120 * i}
+      delay={100 + 40 * i}
     />
   ))
+  const { model, modelBodyStyle, modelVariant } = carData
   return (
     <div className='content-wrapper'>
       <Spring
@@ -20,9 +21,9 @@ const CardContent = ({ carData }) => {
         {props => (
           <div className='content-section heading-main' style={props}>
             <span className='content-heading'>
-              A6 <span className='subheading'>Saloon</span>
+              {model} <span className='subheading'>{modelBodyStyle}</span>
             </span>
-            <span className='subheading'>50 TDI quattro</span>
+            <span className='subheading'>{modelVariant}</span>
           </div>
         )}
       </Spring>
